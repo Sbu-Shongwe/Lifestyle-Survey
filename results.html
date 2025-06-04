@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Survey Results</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore-compat.js"></script>
+<script src="firebase-config.js"></script>
+</head>
+<body>
+<nav>
+<a href="index.html">FILL OUT SURVEY</a>
+<a href="results.html">VIEW SURVEY RESULTS</a>
+</nav>
+
+<h2>Survey Results</h2>
+
+<div id="resultsContainer">
+<p id="noDataMessage" style="display: none;">No Surveys Available.</p>
+<ul id="resultsList" style="display: none;">
+<li>Total Surveys: <span id="totalSurveys"></span></li>
+<li>Average Age: <span id="averageAge"></span></li>
+<li>Oldest Participant: <span id="oldest"></span></li>
+<li>Youngest Participant: <span id="youngest"></span></li>
+<li>% Who Like Pizza: <span id="pizzaPercent"></span>%</li>
+<li>Avg Rating (Eat Out): <span id="avgEatOut"></span></li>
+</ul>
+</div>
+
+<script src="results.js"></script>
+</body>
+</html>
